@@ -15,9 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "idksapr\\lptest\\bin\\": "bin/",
+            "idksapr\\lptest\\examples\\": "examples/",
             "idksapr\\lptest\\": "src/",
             "idksapr\\lptest\\tests\\": "tests/"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4"
     }
 }

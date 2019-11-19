@@ -89,7 +89,8 @@ abstract class AbstractHttpService implements SubscriptionServiceInterface
     public function run(array $lead): SubscriptionResult
     {
         if (!$this->isReady()) {
-            return new SubscriptionResult(false, 'Incorrectly prepared service');
+            $this->result = new SubscriptionResult(false, 'Incorrectly prepared service');
+            return $this->result;
         }
 
         try {
