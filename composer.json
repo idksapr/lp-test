@@ -1,0 +1,23 @@
+{
+    "name": "idksapr/lp-test",
+    "description": "LP test",
+    "type": "library",
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "Dmitry Ivanov",
+            "email": "idksapr@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "idksapr\\lptest\\bin\\": "bin/",
+            "idksapr\\lptest\\": "src/",
+            "idksapr\\lptest\\tests\\": "tests/"
+        }
+    }
+}
