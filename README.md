@@ -1,5 +1,46 @@
 # LP test.
 
+## Formulation of the problem
+
+Задача: написать библиотеку для работы с интеграциями.
+
+На входе:
+
+Tasks = '[
+  {
+    integration: {
+      service: "mailerlite",
+      apiKey: "493ede2b62a8027a21267c15c570b1b4",
+      groupId: 14395208,
+    },
+    lead: {
+      name: "Вася",
+      email: "vasya@platformalp.ru",
+    },
+  },
+  {
+    integration: {
+      service: "mailchimp",
+      apiKey: "33f401b170e95096e9169206b229793d-us13",
+      listId: 341781,
+    },
+    lead: {
+      name: "Петр",
+      email: "petr@platformalp.ru",
+    },
+  }
+]'
+
+Для каждой задачи в массиве должна выполнится соответствующая интеграция (добавления подписчика).
+По каждой задаче должен выводится результат (ок и ответ от сервера, или ошибка и описание ошибки).
+Система должна быть рассчитана на удобное подключения других интеграций в будущем.
+
+При оценке задания в первую очередь будет оцениваться подход, архитектура, стиль и т.п.
+
+Документация по указанным двум сервисам:
+https://mailchimp.com/developer/
+https://developers.mailerlite.com/docs
+
 ## Installation
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
