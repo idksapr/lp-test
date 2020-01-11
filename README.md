@@ -1,6 +1,6 @@
 # LP test.
 
-## Formulation of the problem
+## Specification
 
 Задача: написать библиотеку для работы с интеграциями.
 
